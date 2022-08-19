@@ -1,10 +1,10 @@
 <h2><%= @list.name %></h2>
 
 <% @list.movies.each do |movie| %>
-<%= movie.title %>
-<%= movie.overview %>
-<%= movie.poster_url %>
-<%= movie.rating %>
+<h3><%= movie.title %></h3>
+<p><%= movie.overview %></p>
+<p><%= movie.poster_url %></p>
+<p>IMDB rating: <%= movie.rating %></p>
 <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
 <%= link_to "Delete movie",
   bookmark_path(bookmark),
