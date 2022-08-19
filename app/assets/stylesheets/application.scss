@@ -10,3 +10,23 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "poster";
+@import "navbar";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&family=Sora:wght@600&family=Work+Sans&display=swap');
+
+
+// SCSS
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  text-decoration: none;
+}
