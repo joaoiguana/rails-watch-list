@@ -12,6 +12,8 @@
 @import "pages/index";
 @import "poster";
 @import "navbar";
+@import "form";
+@import "card";
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&family=Sora:wght@600&family=Work+Sans&display=swap');
@@ -29,4 +31,20 @@ p {
 
 body {
   text-decoration: none;
+}
+
+.link {
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+  color: #686565;
+}
+
+.link-title {
+  font-family: 'Sora', sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.margin {
+  margin-top: 80px;
 }
