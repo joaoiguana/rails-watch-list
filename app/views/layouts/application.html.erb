@@ -11,19 +11,28 @@
   </head>
 
   <body>
-  <nav class="navbar bg-light fixed-top" data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
-    <div class="container">
-      <%= link_to root_path, class: "navbar-brand" do %>
-        <%= image_tag "noun-movies-3810377.png", class: "nav-logo" %>
-      <% end %>
-    <p>
-      <%= link_to "My lists", lists_path, class: "link" %>
-    </p>
-    <p>
-      <%= link_to "New list", new_list_path, class: "link" %>
-    </p>
-    </div>
-  </nav>
+    <nav class="navbar bg-light fixed-top" data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
+      <div class="container">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <%= image_tag "noun-movies-3810377.png", class: "nav-logo" %>
+        <% end %>
+      <p>
+        <%= link_to "My lists", lists_path, class: "link" %>
+      </p>
+      <p>
+        <%= link_to "New list", new_list_path, class: "link" %>
+      </p>
+      </div>
+    </nav>
     <%= yield %>
+    <div class="footer margin">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </body>
 </html>

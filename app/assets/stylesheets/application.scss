@@ -14,6 +14,7 @@
 @import "navbar";
 @import "form";
 @import "card";
+@import "footer";
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&family=Sora:wght@600&family=Work+Sans&display=swap');
@@ -47,4 +48,8 @@ body {
 
 .margin {
   margin-top: 80px;
+}
+
+.margin-bottom {
+  margin-bottom: 40px;
 }
