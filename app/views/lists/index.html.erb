@@ -1,7 +1,7 @@
 <div class="container">
   <h1 class="margin margin-bottom">Lists</h1>
   <% @lists.each do |list| %>
-    <div class="card-category margin-bottom">
+    <div class="card-category margin-bottom" style='background image: cl_image_tag(list.photo.key)'>
       <%= link_to list.name, list_path(list), class: "link-title" %>
       <% if list.photo.attached? %>
         <% cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
